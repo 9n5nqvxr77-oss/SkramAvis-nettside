@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Amalie skriver; Skramavis lanserer!  – SkramAvis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: Inter, sans-serif; margin:0; padding:0; line-height:1.6; background:#fff; color:#111; }
+    header { border-bottom:2px solid #000; padding:10px 20px; display:flex; justify-content:space-between; align-items:center; }
+    header h1 { margin:0; font-family:Merriweather,serif; font-size:1.4rem; }
+    .brand .special { font-family:'Dancing Script',cursive; color:#cc0000; font-size:1.8rem; }
+    main { max-width:800px; margin:20px auto; padding:0 20px; }
+    h2 { font-family:Merriweather,serif; font-size:2rem; margin-top:0; }
+    .byline { color:#555; margin-bottom:12px; }
+    img.cover { width:100%; height:auto; margin-bottom:16px; }
+    article p { margin:12px 0; }
+    .back { text-decoration:none; font-weight:bold; color:#cc0000; }
+    footer { border-top:1px solid #ccc; padding:10px; text-align:center; font-size:0.9rem; color:#555; margin-top:20px; }
+  
+  /* --- Mørkmodus (automatisk) --- */
+@media (prefers-color-scheme: dark){
+  body{ background:#2b2d31; color:#f0f0f0; }
+  header{ border-bottom-color:#3a3d42; }
+  nav a{ color:#f0f0f0; }
+  nav a + a::before{ background:#4a4d52; }
+  .tagline{ color:#c8c8c8; }
+
+  /* søkebar mørkmodus */
+  .searchbar{ background:#3a3d42; border-color:#4a4d52; }
+  .searchbar input{ color:#f0f0f0; background:#3a3d42; }
+  .searchbar input::placeholder{ color:#aaa; }
+  .searchbar button{ color:#ddd; }
+
+  .article{ border-top-color:#3a3d42; }
+  .article img{ border-color:#3a3d42; }
+
+  footer{ border-top-color:#3a3d42; color:#c8c8c8; }
+
+  #searchResults{ background:#3a3d42; border-color:#4a4d52; box-shadow:0 6px 18px rgba(0,0,0,.6); }
+  #searchResults a{ color:#8ab4ff; }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back">← Til forside</a>
+    <h1 class="brand">Skram<span class="special">A</span>vi<span class="special">S</span></h1>
+  </header>
+  <main>
+    <h2>Skramavis lanseres!</h2>
+    <div class="byline">Av redaksjonen • skrevet 21. november 2025
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Amalie_Skram_videregående_skole.jpg" alt="Skolelaget" class="cover">
+    <article>
+      <p>I dag, 21. november, lanseres Amalie Skrams skoleavis Skramavis for aller første og siste gang. Se nedenfor hva vi i Skramavis vil gjøre for dere og hvem vi er.
+
+
+Hva vil det bety for dere elever her på Amalie Skram? 
+Jo, dere vil få masse nyttig informasjon, flere giveaways, shoutouts, kronikker og tidige tiktok-videoer. Vi i Skram avis ønsker å gi elevene på skolen mer informasjon om det som faktisk foregår, men samtidig få dere til å le 😂. Ved hjelp av nettsiden vår, kan dere også sende inn leserinnlegg som kan bli publisert her! Det er også mulig å komme i kontakt med vårt glimrende team.  
+
+</p>
+</p>
+
+      <p>
+
+      <p> 
+</p>
+
+      <p>Hvem er vi? 
+Vi er en fantastisk gruppe mennesker som står bak dette. Vår kjære daglige leder Olav Andreas Dahl Korneliussen har garantert sett limt på alle skjermene på bygget med det joviale ansiktet hans. Olav er også IT-ansvarlig, selv om han er komplett inkompetent innen IT. Spør han om du lurer på noe! Det kan gjelde hva som helst, fra hvordan skrive leserinnlegg, få shoutout eller til og med kjærlighetssorg. (Olav er singel 😉). Så lenge det ikke er noe IT relatert, er han behjelpelig! 
+
+Deretter har vi våre to erfarne influensere, megasøte Olivia og vår eksotiske Angelica (Angelica har lilla hår). 
+
+</p>
+
+      <p>Olivia Emblem-Arnesen er både økonomi- og produksjonsansvarlig. Hun sørger for at alt går rundt og ser bra ut, med en blanding av seriøsitet og sillyness!
+Angelica Vassdal, som har lilla hår, har lilla hår og er, i tillegg til å være influenser, salgsansvarlig og personalansvarlig. Hun er i god kontakt med kjøperne og passer på at alle har det bra! Gjerne bli med på en TikTok med våre koselige influensere, de biter ikke! :)
+
+Tuva Aasgard er en helt egen type moro! Hun har ansvar for bærekraft og markedsføring. Hun lager de beste plakatene noensinne! Tuva redigerer også våre intervjuer og andre innlegg. Hun er veldig opptatt av den røde tråden, og andre tråder med andre farger. 
+
+
+
+</p>
+
+      <p>Sist, men ikke minst, har vi vår gøyale Laura Johanne Sangolt som alltid får oss til å le! Laura er vår medarbeider og hjelper til med alt som trengs! Hva skulle vi ha gjort uten henne? 🥺
+
+Dette er alle våre fantastiske ansatte som alle er tilgjengelig både digitalt og fysisk, og jobber for dere elever på Amalie Skram. Bli med på vår fantastiske reise!
+</p>
+    </article>
+  </main>
+  <footer>© <span id="year"></span> SkramAvis</footer>
+  <script>
+    document.getElementById('date').textContent = new Date().toLocaleDateString('no-NO',{year:'numeric',month:'long',day:'numeric'});
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

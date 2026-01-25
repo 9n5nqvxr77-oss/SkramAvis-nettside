@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hvordan sende inn leserinnlegg? – SkramAvis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: Inter, sans-serif; margin:0; padding:0; line-height:1.6; background:#fff; color:#111; }
+    header { border-bottom:2px solid #000; padding:10px 20px; display:flex; justify-content:space-between; align-items:center; }
+    header h1 { margin:0; font-family:Merriweather,serif; font-size:1.4rem; }
+    .brand .special { font-family:'Dancing Script',cursive; color:#cc0000; font-size:1.8rem; }
+    main { max-width:800px; margin:20px auto; padding:0 20px; }
+    h2 { font-family:Merriweather,serif; font-size:2rem; margin-top:0; }
+    .byline { color:#555; margin-bottom:12px; }
+    img.cover { width:100%; height:auto; margin-bottom:16px; }
+    article p { margin:12px 0; }
+    .back { text-decoration:none; font-weight:bold; color:#cc0000; }
+    footer { border-top:1px solid #ccc; padding:10px; text-align:center; font-size:0.9rem; color:#555; margin-top:20px; }
+ 
+ /* --- Mørkmodus (automatisk) --- */
+@media (prefers-color-scheme: dark){
+  body{ background:#2b2d31; color:#f0f0f0; }
+  header{ border-bottom-color:#3a3d42; }
+  nav a{ color:#f0f0f0; }
+  nav a + a::before{ background:#4a4d52; }
+  .tagline{ color:#c8c8c8; }
+
+  /* søkebar mørkmodus */
+  .searchbar{ background:#3a3d42; border-color:#4a4d52; }
+  .searchbar input{ color:#f0f0f0; background:#3a3d42; }
+  .searchbar input::placeholder{ color:#aaa; }
+  .searchbar button{ color:#ddd; }
+
+  .article{ border-top-color:#3a3d42; }
+  .article img{ border-color:#3a3d42; }
+
+  footer{ border-top-color:#3a3d42; color:#c8c8c8; }
+
+  #searchResults{ background:#3a3d42; border-color:#4a4d52; box-shadow:0 6px 18px rgba(0,0,0,.6); }
+  #searchResults a{ color:#8ab4ff; }
+}
+ </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back">← Til forside</a>
+    <h1 class="brand">Skram<span class="special">A</span>vi<span class="special">S</span></h1>
+  </header>
+  <main>
+    <h2>Hvordan sende inn leserinnlegg?</h2>
+    <div class="byline">Av Olivia Emblem-Arnesen • skrevet 7. januar 2026
+    <img src="https://images.ndla.no/20060515-110353-4.jpg" alt="Elever i diskusjon" class="cover">
+    <article>
+      <p>For å sende inn et leserinnlegg til oss, må dere gjøre følgende:
+Skriv et leserinnlegg om noe DU brenner for!
+Send den til oss på mail skramavis@gmail.com, eller på SoMe til @skramavis. (Vi er både på TikTok og Instagram!)
+
+</p>
+      <p>Hva skjer videre?
+Først vil vi lese leserinnlegget, og vurdere om den er akseptabel å legge ut. Om den ikke er godkjent, vil vi sende en tilbakemelding om hva som må endres for at den skal kunne publiseres. Hvis den er akseptabel, vil vi straks legge den ut. 
+
+</p>
+      <p>Hva skal til for at innlegget skal være godkjent?
+Den kan ikke inneholde hatefylle ytringer
+Teksten må være relevant for elever på Amalie Skram vgs
+Den må være bra skrevet med god rettskriving (Vi kan gjerne hjelpe deg med dette!) 
+Vi må ha samtykke fra alle privatpersoner du skriver om
+
+</p>
+      <p>Kan man være anonym?
+Ja! Du kan velge å være anonym, men da må du gi tydelig beskjed om det i meldingen. Hvis du ikke gir beskjed om dette, vil vi publisere artikkelen under ditt navn.
+
+</p>
+      <p>Når kan du forvente å få leserinnlegget ditt publisert?
+Etter at du har sendt innlegget, kan det ta noen virkedager før den blir lagt ut. Om teksten din stiller til krav med alle kriteriene våre, vil denne prosessen gå rimelig raskt. Det er også viktig å merke seg at i utgangspunktet jobber vi ikke på helgene. Så hvis du sender inn teksten din på én fredag, vil den mest sannsynlig ikke legges ut før neste uke.
+
+
+</p>
+      <p>Kontakt oss!
+</p>
+      <p>Med mer samarbeid mellom elever og lærere kan vi skape et mer inkluderende og engasjerende læringsmiljø.</p>
+    </article>
+  </main>
+  <footer>© <span id="year"></span> SkramAvis</footer>
+  <script>
+    document.getElementById('date').textContent = new Date().toLocaleDateString('no-NO',{year:'numeric',month:'long',day:'numeric'});
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

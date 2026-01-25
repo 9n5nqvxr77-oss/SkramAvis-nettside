@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temauke i uke 3!</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: Inter, sans-serif; margin:0; padding:0; line-height:1.6; background:#fff; color:#111; }
+    header { border-bottom:2px solid #000; padding:10px 20px; display:flex; justify-content:space-between; align-items:center; }
+    header h1 { margin:0; font-family:Merriweather,serif; font-size:1.4rem; }
+    .brand .special { font-family:'Dancing Script',cursive; color:#cc0000; font-size:1.8rem; }
+    main { max-width:800px; margin:20px auto; padding:0 20px; }
+    h2 { font-family:Merriweather,serif; font-size:2rem; margin-top:0; }
+    .byline { color:#55aade; margin-bottom:12px; }
+    img.cover { width:100%; height:auto; margin-bottom:16px; }
+    article p { margin:12px 0; }
+    .back { text-decoration:none; font-weight:bold; color:#cc0000; }
+    footer { border-top:1px solid #ccc; padding:10px; text-align:center; font-size:0.9rem; color:#555; margin-top:20px; }
+  
+  /* --- Mørkmodus (automatisk) --- */
+@media (prefers-color-scheme: dark){
+  body{ background:#2b2d31; color:#f0f0f0; }
+  header{ border-bottom-color:#3a3d42; }
+  nav a{ color:#f0f0f0; }
+  nav a + a::before{ background:#4a4d52; }
+  .tagline{ color:#c8c8c8; }
+
+  /* søkebar mørkmodus */
+  .searchbar{ background:#3a3d42; border-color:#4a4d52; }
+  .searchbar input{ color:#f0f0f0; background:#3a3d42; }
+  .searchbar input::placeholder{ color:#aaa; }
+  .searchbar button{ color:#ddd; }
+
+  .article{ border-top-color:#3a3d42; }
+  .article img{ border-color:#3a3d42; }
+
+  footer{ border-top-color:#3a3d42; color:#c8c8c8; }
+
+  #searchResults{ background:#3a3d42; border-color:#4a4d52; box-shadow:0 6px 18px rgba(0,0,0,.6); }
+  #searchResults a{ color:#8ab4ff; }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back">← Til forside</a>
+    <h1 class="brand">Skram<span class="special">A</span>vi<span class="special">S</span></h1>
+  </header>
+  <main>
+    <h2>Skramavis lanseres!</h2>
+    <div class="byline">Av Olivia Emblem-Arnesen • skrevet 15. januar 2026
+    <img src="Skjermbilde 2026-01-19 kl. 14.52.19.jpeg" alt="Skolelaget" class="cover">
+    <article>
+      <p>Temauken er tilbake! I uke 3 går det løs på Amalie Skram videregående skole, utført av russestyret. Gjerne bli med og go bananas!!! </p>
+      <p>
+Mandag: Fotballdrakt ⚽️</p>
+      <p>
+Tirsdag: Hatt/parykk 🧢</p>
+      <p>
+Onsdag: Rock n Roll 🤘🎸</p>
+      <p>
+Torsdag: Afterski ⛷️</p>
+      <p>
+Fredag: Lars Berntsen👨</p>
+      <p>
+
+</p>
+    </article>
+  </main>
+  <footer>© <span id="year"></span> SkramAvis</footer>
+  <script>
+    document.getElementById('date').textContent = new Date().toLocaleDateString('no-NO',{year:'numeric',month:'long',day:'numeric'});
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

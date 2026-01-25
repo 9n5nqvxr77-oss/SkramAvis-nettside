@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blådag på Amalie Skram – SkramAvis</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: Inter, sans-serif; margin:0; padding:0; line-height:1.6; background:#fff; color:#111; }
+    header { border-bottom:2px solid #000; padding:10px 20px; display:flex; justify-content:space-between; align-items:center; }
+    header h1 { margin:0; font-family:Merriweather,serif; font-size:1.4rem; }
+    .brand .special { font-family:'Dancing Script',cursive; color:#cc0000; font-size:1.8rem; }
+    main { max-width:800px; margin:20px auto; padding:0 20px; }
+    h2 { font-family:Merriweather,serif; font-size:2rem; margin-top:0; }
+    .byline { color:#555; margin-bottom:12px; }
+    img.cover { width:100%; height:auto; margin-bottom:16px; }
+    article p { margin:12px 0; }
+    .back { text-decoration:none; font-weight:bold; color:#cc0000; }
+    footer { border-top:1px solid #ccc; padding:10px; text-align:center; font-size:0.9rem; color:#555; margin-top:20px; }
+ 
+ /* --- Mørkmodus (automatisk) --- */
+@media (prefers-color-scheme: dark){
+  body{ background:#2b2d31; color:#f0f0f0; }
+  header{ border-bottom-color:#3a3d42; }
+  nav a{ color:#f0f0f0; }
+  nav a + a::before{ background:#4a4d52; }
+  .tagline{ color:#c8c8c8; }
+
+  /* søkebar mørkmodus */
+  .searchbar{ background:#3a3d42; border-color:#4a4d52; }
+  .searchbar input{ color:#f0f0f0; background:#3a3d42; }
+  .searchbar input::placeholder{ color:#aaa; }
+  .searchbar button{ color:#ddd; }
+
+  .article{ border-top-color:#3a3d42; }
+  .article img{ border-color:#3a3d42; }
+
+  footer{ border-top-color:#3a3d42; color:#c8c8c8; }
+
+  #searchResults{ background:#3a3d42; border-color:#4a4d52; box-shadow:0 6px 18px rgba(0,0,0,.6); }
+  #searchResults a{ color:#8ab4ff; }
+}
+ </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back">← Til forside</a>
+    <h1 class="brand">Skram<span class="special">A</span>vi<span class="special">S</span></h1>
+  </header>
+  <main>
+    <h2>Blå dag på Amalie Skram</h2>
+    <div class="byline">Av Olivia Emblem-Arnesen • skrevet 19. november 2025
+    <img src="https://magnorvinduet.no/wp-content/uploads/Amalie-skram-vgs-15.jpg" alt="Scene og publikum" class="cover">
+    <article>
+      <p>19. November var det blå dag her på Amalie Skram. Men hva betyr egentlig dette? Blå dag refererer til Blå sløyfe-aksjonen, som er et samarbeid mellom Prostatakreftforeningen og Kreftforeningen. Det er en årlig kampanje mot prostatakreft. 
+
+Prostakreft er den hyppigste kreftformen for nordmenn og den største kreftformen i Norge (Stensaas, 2023). 
+
+      <p>Det er stort sett eldre menn som er utsatt for denne krefttypen. 
+St. Olavs Hospital  sier at trolig ⅛ menn få påvist prostakreft i løpet av livet sitt. I 2023 var over 40% av de 1039 elevene på Amalie Skram gutter (Amalie Skram, 2023). Det vil si at over 51 gutter av disse elevene vil få krefttypen i sin livstid. Hvert år får over 5000 nordmenn prostakreft, og dette er forventet til å økes til 2030 der 7000 nordmenn blir rammet, noe som er over en 40% økning (Stensaas, 2023). 
+
+
+      <p>Prostata, også kalt blærehalskjertel, er en kjertel i den mannlige kroppen som ligger rundt første del av urinrøret (Tveter & Halvorsen, 2025). Det er stort sett eldre menn som er utsatt for denne krefttypen. Årsaken til prostatakreft er imidlertid ukjent. Ifølge Store Medisinske Leksikon har arv en innvirkning. 
+
+      <p>Ti prosent av tilfellene av kreften skyldes at andre familiemedlemmer også har eller har hatt kreftformen. Spesielt hvis slektningene fikk kreften før de fylte 60 (Wahlqvist, Halvorsen, & Tveter, 2025). 
+
+Ifølge St. Olavs Hospital, er målet med Blå sløyfe-aksjonen å vise omsorg til de som har eller har hatt prostatakreft og deres pårørende, å spre informasjon og øke kunnskap om krefttypen og om å skaffe midler til mer forskning til kreften.
+
+
+
+      <p>Takk til alle dere som gikk med en blå sløyfe eller andre blå klesplagg 19. november!
+</p></p>
+    </article>
+  </main>
+  <footer>© <span id="year"></span> SkramAvis</footer>
+  <script>
+    document.getElementById('date').textContent = new Date().toLocaleDateString('no-NO',{year:'numeric',month:'long',day:'numeric'});
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
