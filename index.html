@@ -240,8 +240,17 @@
 
   <script>
     // Dato
-    document.getElementById('heroDate').textContent = new Date().toLocaleDateString('no-NO',{weekday:'long',year:'numeric',month:'long',day:'numeric'});
-    document.getElementById('year').textContent = new Date().getFullYear();
+   const heroDateEl = document.getElementById('heroDate');
+if (heroDateEl) {
+  heroDateEl.textContent = new Date().toLocaleDateString('no-NO', {
+    weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+  });
+}
+
+const yearEl = document.getElementById('year');
+if (yearEl) {
+  yearEl.textContent = new Date().getFullYear();
+}
 
     // Søk
     const searchBtn = document.getElementById('searchBtn');
